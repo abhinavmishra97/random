@@ -1,0 +1,10 @@
+.top-list{
+    list-style: none;
+}
+.topbar-link {
+        text-decoration: none;
+}
+.top-container {
+    display: flex;
+    justify-content: space-evenly;
+}
