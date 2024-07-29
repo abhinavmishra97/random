@@ -8,16 +8,15 @@ import Topbar from './components/Topbar';
 function App() {
   return (
     <div>
-      <Router>
-        <Topbar/>
-      <Routes>
-        <Route path="/" Component={Home}></Route>
-        <Route path="/about" Component={About}></Route>
-        <Route path="/info" Component={Info}></Route>
-      </Routes>
-    </Router>
+      <Router basename={process.env.PUBLIC_URL}>
+        <Topbar />
+        <Routes>
+          <Route path="/" Component={Home}></Route>
+          <Route path="/about" Component={About}></Route>
+          <Route path="/info" Component={Info}></Route>
+        </Routes>
+      </Router>
     </div>
-    
   );
 };
 
